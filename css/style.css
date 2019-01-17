@@ -65,6 +65,10 @@ section{
     flex: 1 0 auto;
 }
 
+.owl-carousel > div {
+    text-align: center;
+}
+
 /*section-contacts*/
 .contacts_cont{
     background-color: #ececec;
@@ -294,5 +298,8 @@ color: #fff;
     }
     .btn_send{
         width: 35%;
+    }
+    .error-body{
+        padding-top: 23%;
     }
 }
