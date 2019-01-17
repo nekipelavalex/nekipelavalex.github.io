@@ -232,6 +232,10 @@ color: #fff;
         position: absolute;
         background-color:  #76c7c0;
         border-radius: 0 0 15px 15px;
+        display: flex;
+        flex-wrap: nowrap; 
+        flex-direction: column;
+        width: 100%;
     }
     
 
@@ -259,12 +263,6 @@ color: #fff;
 @media screen and (max-width: 768px) {
     .contacts-merg, .contacts-merg h5{
         margin: 20px 0;
-    }
-    ul.nav{
-        display: flex;
-        flex-wrap: nowrap; 
-        flex-direction: column;
-        width: 100%;
     }
     .container{
         text-align: center;
