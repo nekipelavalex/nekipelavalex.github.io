@@ -1,0 +1,85 @@
+/*mask*/
+.modal-mask{
+    position: fixed;
+    display: none;
+    border: 2px solid #6e978e;
+    border-radius: 15px;
+    min-width: 300px;
+    min-height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.closeModal, .mask{
+    cursor: pointer;
+}
+
+.closeModal{
+    float: right;
+}
+
+.mask{
+    position: fixed;
+    display: none;
+    z-index: 900;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.top-mask{
+    flex: 1 0 auto;
+    padding: 0 10px;
+    margin: -2px;
+    border: 2px solid #6e978e;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-mask{
+    flex: 1 0 auto;
+    margin: -2px;
+    border: 2px solid #6e978e;
+    border-radius: 0 0 15px 15px;
+}
+
+.IT-Genesis{
+    display: block;
+    
+    background-color: rgba(109,14,177,.95);
+}
+
+.IT-Genesis > a > img{
+    width: 54px;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.logo-IT-Genesis{
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+}
+
+.logo-IT-Genesis > .span-first{
+    font-size: 20px;
+    display: block;
+}
+
+.logo-IT-Genesis > .span-second{
+    font-size: 12px;
+    display: block;
+}
+
+.ad-mask{
+    text-align: center;
+}

@@ -1,0 +1,267 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: #7f8c8c;
+}
+
+/*header*/
+header.header{
+    position: fixed;
+    width: 100%;
+    background-color: #76c7c0;
+    z-index: 50;
+    top: 0;
+    height: 80px;
+}
+
+header.header > .header-path{
+    background-image: url('../images/Path.png');
+    width: 100%;
+    height: 5%;
+    margin-top: 1.1rem;
+}
+
+.nav-bar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.1rem;
+}
+
+nav > div.logo{
+    color: #fff;
+    padding-top: 5px;
+}
+
+nav > div.menu{
+    margin-right: -15px;
+}
+
+ul.nav > li > a{
+    display: block;
+    padding: 8px 12px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+div.menu li:hover {
+    background-color: #6e978e;
+    border-radius: 5px;
+}
+
+/*section*/
+section{
+    flex: 1 0 auto;
+}
+
+/*section-contacts*/
+.contacts_cont{
+    background-color: #ececec;
+    width: 100%;
+    height: 80px;
+    margin-top: 80px;
+}
+
+.breadcrumb > .breadcrumb-item > a{
+    color: #7f8c8c;
+}
+
+.breadcrumb{
+    padding: 0;
+    margin-top: 12px;
+}
+
+.maps-google{
+    margin: 50px 0;
+    width: 1110px;
+    height: 400px;
+    border: 0;
+}
+
+.text_cont {
+    background-color: #ececec;
+}
+
+.contacts-merg{
+    margin-top: 60px;
+    margin-bottom: 240px;
+}
+
+.contacts-merg h5{
+    margin-bottom: 65px;
+}
+
+.input-cont{
+    width: 62.5%;
+    margin-bottom: 20px;
+    background-color: #e5e6e6;
+    border: 0;
+    border-radius: 7px;
+}
+
+.input-text{
+    width: 100%;
+    background-color: #e5e6e6;
+    border: 0;
+    border-radius: 7px;
+    min-height: 230px;
+}
+
+.btn_send{
+    display: block;
+    width: 25%;
+    margin-top: 35px;
+}
+
+.address-img{
+    margin: 10px 0;
+}
+
+/*footer*/
+
+footer.footer-bttm{
+    flex: 0 0 auto;
+    width: 100%;
+    height: 350px;
+    background-color: #76c7c0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer.footer-bttm > .header-path-bottom{
+    background-image: url('../images/Path-bottom.png');
+    width: 100%;
+    height: 5%;
+} 
+
+.footer-flex{
+    flex: 1 0 auto;
+}
+
+.footer_copyright{
+    background-color: #6ab3ac;
+    height: 50px;
+    flex: 0 0 auto;
+}
+
+.footer_copyright > .container,
+.contacts_cont > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-bttm, .copyright > a ,
+.linkmes > img, .footer_copyright{
+    color: #fff;
+}
+
+.footer-info{
+    margin-top: 40px;
+}
+
+.text-logo-footer{
+    margin: 25px 0;
+}
+
+.comp-comm{
+    display: flex;
+    justify-content: space-around;
+    color: #43706c;
+}
+
+.ul_footer > li > a{
+    color: #fff;
+}
+
+.ul_footer > li{
+    list-style: none;
+    text-indent: -1em;
+}
+
+.ul_footer > li::before{
+content: "\203A";
+padding-right: 5px;
+color: #fff;
+}
+
+/*go-top*/
+#go-top {
+    position: fixed; 
+    bottom: 50px; 
+    right: 39px;
+    text-align: center;
+    cursor:pointer; 
+    display:none;
+    width: 80px;
+    height: 30px;
+    background: #e5e6e6;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+#go-top:hover {
+    background: rgb(156, 156, 156);
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .maps-google{    
+        width: 930px;
+        height: 400px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .maps-google{    
+        width: 700px;
+        height: 400px;
+    }
+
+    .menu, .header-path-bottom,
+    .container.footer-flex{
+        display: none;
+    }
+    
+    footer.footer-bttm{
+        height: 0;
+    }
+    .contacts-merg{
+        margin: 60px 0;
+    }
+    #go-top{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .maps-google{    
+        width: 515px;
+        height: 400px;
+    }
+    .contacts-merg, .contacts-merg h5{
+        margin: 20px 0;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .maps-google{    
+        width: 500px;
+        height: 400px;
+    }
+    .contacts-merg, .contacts-merg h5{
+        margin: 10px 0;
+    }
+
+}
