@@ -230,12 +230,12 @@ color: #fff;
 
     ul.nav{
         position: absolute;
+        width: 100%;
         background-color:  #76c7c0;
         border-radius: 0 0 15px 15px;
         display: flex;
         flex-wrap: nowrap; 
         flex-direction: column;
-        width: 100%;
     }
     
 
@@ -279,7 +279,6 @@ color: #fff;
     }
     .btn_send{
         display: inline;
-        margin-top: 15px;
     }
 }
 
@@ -289,5 +288,11 @@ color: #fff;
     }
     .linkmes{
         display: none;
+    }
+    .footer_copyright > .container{
+        justify-content: center;
+    }
+    .btn_send{
+        width: 35%;
     }
 }
