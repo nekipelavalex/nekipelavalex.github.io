@@ -198,16 +198,12 @@ section{
     border: 0;
 }
 
-.text_cont {
-    background-color: #ececec;
-}
-
 .contacts-merg{
     margin-top: 60px;
     margin-bottom: 240px;
 }
 
-.contacts-merg h5{
+.contacts-merg h4{
     margin-bottom: 65px;
 }
 
@@ -244,7 +240,7 @@ section{
 footer.footer-bttm{
     flex: 0 0 auto;
     width: 100%;
-    height: 250px;
+    height: 240px;
     background-color: #76c7c0;
     display: flex;
     flex-direction: column;
@@ -261,7 +257,7 @@ footer.footer-bttm > .header-path-bottom{
 }
 
 .footer-flex > div > div > h3{
-    margin: 10px 0 35px 0;
+    margin: 10px 0 25px 0;
 }
 
 .footer_copyright{
@@ -280,10 +276,11 @@ footer.footer-bttm > .header-path-bottom{
 .footer-bttm, .copyright > a ,
 .linkmes > img, .footer_copyright{
     color: #fff;
+    font-size: 18px;
 }
 
 .footer-info{
-    margin: 30px 0;
+    margin: 20px 0;
     text-align: center;
 }
 
@@ -316,8 +313,7 @@ footer.footer-bttm > .header-path-bottom{
 }
 
 @media screen and (max-width: 991px) {
-    nav > ul.nav, .header-path-bottom,
-    .container.footer-flex{
+    nav > ul.nav{
         display: none;
     }
 
@@ -329,8 +325,7 @@ footer.footer-bttm > .header-path-bottom{
         display: flex;
         flex-wrap: nowrap; 
         flex-direction: column;
-    }
-    
+    } 
 
     .menuBurger{
         display: block;
@@ -342,12 +337,24 @@ footer.footer-bttm > .header-path-bottom{
         display: none;
     }
 
-    footer.footer-bttm{
-        height: 0;
-    }
     .contacts-merg{
         margin: 60px 0;
     }
+
+    footer.footer-bttm{
+        height: 420px;
+    }
+
+    div.row.footer-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    div.row.footer-info >  .col-6{
+max-width: 100%;
+    }
+
     #go-top{
         display: none !important;
     }
@@ -357,24 +364,34 @@ footer.footer-bttm > .header-path-bottom{
     .contacts-merg, .contacts-merg h5{
         margin: 20px 0;
     }
+
     .row.contacts-merg{
         flex-wrap: wrap-reverse;
     }
+
     .container{
         text-align: center;
     }
+
     #data{
         display: flex;
         flex-direction: column;
     }
+
     #data > div{
         width: 100%;
     }
+
     .input-cont{
         float: left;
     }
+
     .btn_send{
         display: inline;
+    }
+
+    footer.footer-bttm{
+        height: 450px;
     }
 }
 
@@ -382,16 +399,24 @@ footer.footer-bttm > .header-path-bottom{
     .contacts-merg, .contacts-merg h5{
         margin: 10px 0;
     }
+
     .linkmes{
         display: none;
     }
+
     .footer_copyright > .container{
         justify-content: center;
     }
+
     .btn_send{
         width: 35%;
     }
+
     .error-body{
         padding-top: 23%;
+    }
+
+    footer.footer-bttm{
+        height: 420px;
     }
 }
