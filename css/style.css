@@ -328,8 +328,7 @@ footer.footer-bttm > .header-path-bottom{
         display: flex;
         flex-wrap: nowrap; 
         flex-direction: column;
-    }
-    
+    }    
 
     .menuBurger{
         display: block;
