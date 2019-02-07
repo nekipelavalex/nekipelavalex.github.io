@@ -158,12 +158,73 @@ ul.nav li:hover {
 
 section{
     flex: 1 0 auto;
+    padding-bottom: 25px;
 }
 
 .owl-carousel > div {
     text-align: center;
 }
 
+/******************************************************************************************/
+/* section-skills                                                                         */
+/******************************************************************************************/
+
+.container > div.skills{
+    display: flex;
+}
+
+.programm_skills, .disign_skills{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 50%;
+}
+
+.skills::after, .skills::before{
+    display: table;
+    content: " ";
+}
+
+.skills > div > h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.skills_items{
+    display: flex;
+}
+
+.skilltittle{
+    font-weight: 600;
+    width: 20%;
+    text-align: right;
+}
+
+.progress-bar{
+    background-color: #76c7c0;
+    height: 100%;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.column{
+    margin: 0 15px;
+    width: 66.66%;
+}
+
+.skillprogress{
+    border-radius: 0px;
+    height: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: #d6d6d6;    
+}
+
+.progress-bar__only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 /******************************************************************************************/
 /* section-contacts                                                                       */
 /******************************************************************************************/
@@ -184,11 +245,12 @@ section{
 
 .breadcrumb > .breadcrumb-item > a{
     color: #7f8c8c;
+    font-size: 1.5rem;
 }
 
 .breadcrumb{
     padding: 0;
-    margin-top: 12px;
+    margin-top: 10px;
 }
 
 .maps-google{
@@ -204,7 +266,7 @@ section{
 
 .contacts-merg{
     margin-top: 60px;
-    margin-bottom: 240px;
+    margin-bottom: 100px;
 }
 
 .contacts-merg h5{
