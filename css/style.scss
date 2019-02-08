@@ -34,9 +34,7 @@ html, body{
 
 .closeModal{
     float: right;
-    .mask{
-        cursor: pointer;
-    }
+    cursor: pointer;
 }
 
 .mask{
@@ -47,7 +45,8 @@ html, body{
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8)
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
 }
 
 .top-mask{
@@ -172,6 +171,9 @@ section{
     flex: 1 0 auto;
     padding-bottom: 25px;
 }
+.section_home{
+    margin-top: 80px;
+}
 
 .owl-carousel > div {
     text-align: center;
@@ -208,6 +210,7 @@ section{
 .skilltittle{
     font-weight: 600;
     width: 20%;
+    min-width: 90px;
     text-align: right;
 }
 
@@ -500,6 +503,9 @@ footer.footer-bttm > .header-path-bottom{
 }
 
 @media screen and (max-width: 768px) {
+    .contacts_cont > .container{
+        justify-content: center;
+    }
     .contacts-merg, .contacts-merg h5{
         margin: 20px 0;
     }
