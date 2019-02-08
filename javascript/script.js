@@ -70,7 +70,8 @@ $(function () {
 var owl = $('.owl-carousel');
 owl.owlCarousel({
     loop: true,
-    margin: 10,
+    margin: 20,
+    stagePadding: 20,
     responsive: {
         0: {
             items: 1
