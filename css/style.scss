@@ -130,6 +130,17 @@ header.header > .header-path{
 nav > div.logo{
     color: #fff;
     padding-top: 5px;
+    width: 50%;
+    overflow: hidden;
+    .logo__ani{
+        animation: animation_logo 5s linear alternate;
+        animation-iteration-count: infinite;
+        transition-timing-function: ease;
+        &:hover{
+            animation-play-state: paused;
+            cursor: default;
+        }
+    }
 }
 
 ul.nav{
@@ -240,9 +251,11 @@ section{
             color: #7f8c8c;
             font-size: 22px;
             &:hover{
-                background-color: #fff;
+                background-color: $color_header;
                 border-radius: 0.5rem;
-                padding: 10px;
+                padding: 7px;
+                opacity: 0.75;
+                color: #000000;
             }
         }
     }
@@ -476,6 +489,14 @@ footer.footer-bttm > .header-path-bottom{
     .programm_skills, .disign_skills{
         width: 100%;
     }
+    .portfolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .work{
+            width: 100%;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -487,6 +508,9 @@ footer.footer-bttm > .header-path-bottom{
     }
     .container{
         text-align: center;
+        .contacts_cont_text{
+            display: none;
+        }
     }
     #data{
         display: flex;
@@ -504,6 +528,11 @@ footer.footer-bttm > .header-path-bottom{
     footer.footer-bttm{
         height: 425px;
     }
+    nav > div.logo .logo__ani{
+        animation: none;
+        text-align: left;
+    }
+    
 }
 
 @media screen and (max-width: 576px) {
@@ -521,5 +550,14 @@ footer.footer-bttm > .header-path-bottom{
     }
     footer.footer-bttm{
         height: 400px;
+    }
+}
+
+@keyframes animation_logo{
+    from {
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(50%);
     }
 }
