@@ -1,4 +1,5 @@
 $color_header: #76c7c0;
+$color_text_one:  #7f8c8c;
 
 html, body{
     margin: 0;
@@ -9,7 +10,7 @@ html, body{
     display: flex;
     flex-direction: column;
     height: 100%;
-    color: #7f8c8c;
+    color: $color_text_one;
 }
 
 /******************************************************************************************/
@@ -162,7 +163,23 @@ ul.nav li:hover {
 .menuBurger, .search{
     display: none;
 }
+/******************************************************************************************/
+/* section my-face                                                                        */
+/******************************************************************************************/
 
+#my_face{
+    margin-top: 8rem;
+    .container{
+        text-align: center;
+        div.my_face{
+            margin: 2.5rem 0;
+        }
+    }
+}
+
+a.my_face{
+    color: $color_text_one;
+}
 /******************************************************************************************/
 /* section                                                                                */
 /******************************************************************************************/
@@ -170,9 +187,6 @@ ul.nav li:hover {
 section{
     flex: 1 0 auto;
     padding-bottom: 25px;
-}
-.section_home{
-    margin-top: 80px;
 }
 
 .owl-carousel > div {
