@@ -37,8 +37,8 @@ $(function () {
 });
 
 $(document).ready(function () {
-    $('.modal-mask').show(200);
-    $('.mask').show(200);
+    $('.modal-mask').show(400);
+    $('.mask').slideDown(300);
 
     $('.closeModal').click(function () {
         $('.modal-mask').hide(200);
@@ -53,7 +53,7 @@ $(document).ready(function () {
     });
 
     $('.mask').click(function () {
-        $('.mask').hide();
+        $('.mask').hide(200);
     });
 })
 

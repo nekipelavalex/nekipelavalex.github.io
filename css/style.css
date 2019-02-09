@@ -47,11 +47,18 @@ ul.nav li:hover { background-color: #6e978e; border-radius: 5px; }
 .menuBurger, .search { display: none; }
 
 /******************************************************************************************/
+/* section my-face                                                                        */
+/******************************************************************************************/
+#my_face { margin-top: 8rem; }
+#my_face .container { text-align: center; }
+#my_face .container div.my_face { margin: 2.5rem 0; }
+
+a.my_face { color: #7f8c8c; }
+
+/******************************************************************************************/
 /* section                                                                                */
 /******************************************************************************************/
 section { -webkit-box-flex: 1; -ms-flex: 1 0 auto; flex: 1 0 auto; padding-bottom: 25px; }
-
-.section_home { margin-top: 80px; }
 
 .owl-carousel > div { text-align: center; }
 
