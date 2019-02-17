@@ -71,8 +71,8 @@ html, body{
 .IT-Genesis{
     display: block;    
     background-color: rgba(109,14,177,.95);
-    a{
-        img{
+    .IT-Genesis__link{
+        .IT-Genesis__img{
             width: 54px;
             vertical-align: middle;
             border-style: none;
@@ -102,8 +102,7 @@ html, body{
 /* header                                                                                 */
 /******************************************************************************************/
 
-header{
-    &.header{
+.header{
         position: fixed;
         width: 100%;
         background-color: $color_header;
@@ -117,7 +116,6 @@ header{
             margin-top: 0.85rem;
         }
     }
-}
 
 .nav-bar{
     position: relative;
@@ -142,24 +140,27 @@ nav > div.logo{
     }
 }
 
-ul{
-    &.nav{
-        margin-right: -15px;
-        li{
-            &:hover {
-                background-color: #6e978e;
-                border-radius: 5px;
-            }
-            a{
-                display: block;
-                padding: 8px 12px;
-                color: #fff;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+.menu{
+    margin-right: -15px;
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    .menu__item{
+        &:hover {
+            background-color: #6e978e;
+            border-radius: 5px;
+        }
+        .menu__link{
+            display: block;
+            padding: 8px 12px;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
         }
     }
 }
+
 
 .menuBurger, .search{
     display: none;
@@ -172,19 +173,16 @@ ul{
     margin-top: 8rem;
     .container{
         text-align: center;
-        div{
-            &.my_face{
-                margin: 2.5rem 0;
-            }
+        .my_face{
+            margin: 2.5rem 0;
         }
     }
 }
 
-a{
-    &.my_face{
+.my_face__link{
         color: $color_text_one;
     }
-}
+
 /******************************************************************************************/
 /* section                                                                                */
 /******************************************************************************************/
@@ -203,22 +201,20 @@ section{
 /******************************************************************************************/
 
 .container{
-    div{
-        &.skills{
-            display: flex;
-            &::after{
-                display: table;
-                content: " ";
-            }
-            &::before{
-                display: table;
-                content: " ";
-            }
-            div{
-                h2{
-                    margin-top: 20px;
-                    margin-bottom: 10px;
-                }
+    .skills{
+        display: flex;
+        &::after{
+            display: table;
+            content: " ";
+        }
+        &::before{
+            display: table;
+            content: " ";
+        }
+        .programm_skills{
+            .programm_skills__text{
+                margin-top: 20px;
+                margin-bottom: 10px;
             }
         }
     }
@@ -276,8 +272,13 @@ section{
     text-align: center;
     padding: 15px 0;
     display: flex;
-    div{
-        a{
+    .work{
+        border: 1px solid transparent;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin: 1rem;
+        width: 30%;
+        .portfolio__link{
             color: #7f8c8c;
             font-size: 22px;
             &:hover{
@@ -289,26 +290,15 @@ section{
             }
         }
     }
-
-    div.work-color{
+    .work-color{
         border-color: #6ab3ac;
         background-color: rgba(118, 199, 192, 0.5);
     }
-
-    .work{
-        border: 1px solid transparent;
-        border-radius: 0.5rem;
-        padding: 1rem;
-        margin: 1rem;
-        width: 30%;
-    }
 }
 
-h2{
-    &.heading-work{
+.heading-work{
         text-align: center;
         padding: 15px 0;
-    }
 }
 
 /******************************************************************************************/
@@ -332,7 +322,7 @@ h2{
     padding: 0;
     margin-top: 10px;
     .breadcrumb-item{
-        a{
+        .breadcrumb__link{
             color: #7f8c8c;
             font-size: 1.5rem;
         }
@@ -353,7 +343,7 @@ h2{
 .contacts-merg{
     margin-top: 60px;
     margin-bottom: 100px;
-    h5{
+    .contacts-merg__text{
         margin-bottom: 65px;
     }
 }
@@ -388,27 +378,25 @@ h2{
 /* footer                                                                                 */
 /******************************************************************************************/
 
-footer{
-    &.footer-bttm{
-        flex: 0 0 auto;
+.footer-bttm{
+    flex: 0 0 auto;
+    width: 100%;
+    height: 270px;
+    background-color: $color_header;
+    display: flex;
+    flex-direction: column;
+    .header-path-bottom{
+        background-image: url('../images/Path-bottom.png');
         width: 100%;
-        height: 270px;
-        background-color: $color_header;
-        display: flex;
-        flex-direction: column;
-        .header-path-bottom{
-            background-image: url('../images/Path-bottom.png');
-            width: 100%;
-            height: 5%;
-        } 
-    }
+        height: 5%;
+    } 
 }
 
 .footer-flex{
     flex: 1 0 auto;
-    div{
-        div{
-            h3{
+    .footer-info{
+        .col-md-4{
+            .footer-info__text{
                 margin: 10px 0 35px 0;
             }
         }
@@ -427,8 +415,8 @@ footer{
     }
 }
 
-.footer-bttm, .copyright > a ,
-.linkmes > img, .footer_copyright{
+.footer-bttm, .copyright > .copyright__link ,
+.linkmes > .linkmes__img, .footer_copyright{
     color: #fff;
 }
 
@@ -464,23 +452,21 @@ footer{
 }
 
 @media screen and (max-width: 991px) {
-    nav > ul.nav{
+    .nav-bar > .menu{
         display: none;
     }
 
-    ul{
-        &.nav{
-            position: absolute;
-            width: 100%;
-            background-color:  #76c7c0;
-            border-radius: 0 0 15px 15px;
-            display: flex;
-            flex-wrap: nowrap; 
-            flex-direction: column;
-            .search{
-                display: none;
-            }
-        }  
+    .menu{
+        position: absolute;
+        width: 100%;
+        background-color:  #76c7c0;
+        border-radius: 0 0 15px 15px;
+        display: flex;
+        flex-wrap: nowrap; 
+        flex-direction: column;
+        .search{
+            display: none;
+        } 
     } 
 
     .menuBurger{
@@ -489,24 +475,21 @@ footer{
         z-index: 1;
     }
 
-    footer{
-        &.footer-bttm{
-            height: 400px;
-        }
+    .footer-bttm{
+        height: 400px;
     }
 
-    div.row.footer-info{
+    .row.footer-info{
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0;
         .col-md-4{
             max-width: 100%;
+            .footer-info__text{
+                margin: 35px 0 10px 0;
+            }
         }
-    }
-
-    .footer-flex > div > div > h3{
-        margin: 35px 0 10px 0;
     }
 
     .contacts-merg{
@@ -517,7 +500,7 @@ footer{
         display: none !important;
     }
 
-    .container > div.skills{
+    .container > .skills{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -544,7 +527,7 @@ footer{
         }
     }  
 
-    .contacts-merg, .contacts-merg h5{
+    .contacts-merg, .contacts-merg .contacts-merg__text{
         margin: 20px 0;
     }
 
@@ -562,7 +545,7 @@ footer{
     #data{
         display: flex;
         flex-direction: column;
-        div{
+        .contact_form{
             width: 100%;
         }
     }
@@ -575,11 +558,11 @@ footer{
         display: inline;
     }
 
-    footer.footer-bttm{
+    .footer-bttm{
         height: 425px;
     }
 
-    nav > div.logo{
+    .nav-bar > .logo{
         width: 100%;
         .logo__ani{
             animation: none;
@@ -589,7 +572,7 @@ footer{
 }
 
 @media screen and (max-width: 576px) {
-    .contacts-merg, .contacts-merg h5{
+    .contacts-merg, .contacts-merg .contacts-merg__text{
         margin: 10px 0;
     }
 
@@ -606,11 +589,8 @@ footer{
     .error-body{
         padding-top: 23%;
     }
-    
-    footer{
-        &.footer-bttm{
-            height: 400px;
-        }
+    .footer-bttm{
+        height: 400px;
     }
 }
 
