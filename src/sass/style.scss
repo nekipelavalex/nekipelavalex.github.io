@@ -7,7 +7,6 @@
     margin: 0;
     padding: 0;
 }
-@import 'base/media';
 
 .container {
     width: 1140px;
@@ -18,12 +17,13 @@
     width: 60px;
     height: 3px;
     background-color: $main-color;
-    margin-top: 25px;
+    margin: 25px auto 0 auto;
 }
-
+@import 'base/media';
 @import 'blocks/promo';
 @import 'blocks/title';
 @import 'blocks/button';
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
 @import 'blocks/about';
+@import 'blocks/resume';
