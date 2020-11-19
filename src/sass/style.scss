@@ -19,7 +19,6 @@
     background-color: $main-color;
     margin: 25px auto 0 auto;
 }
-@import 'base/media';
 @import 'blocks/promo';
 @import 'blocks/title';
 @import 'blocks/button';
@@ -32,3 +31,4 @@
 @import 'blocks/price';
 @import 'blocks/contacts';
 @import 'blocks/policy';
+@import 'base/media';
