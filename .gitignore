@@ -5,3 +5,8 @@ package.json
 package-lock.json
 .gitignore
 gulpfile.js
+bella/
+first_portfolio/
+pulse/
+uber/
+lending_cuda/
